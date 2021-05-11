@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:10px;
+    font-family: 'Montserrat',sans-serif;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+/* hero section */
+#hero{
+    background-image: url(./img/hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity:.7;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width:fit-content;
+    font-size:4rem;
+    position: relative;
+    color:white;
+}
+#hero h1 span{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color:crimson;
+}
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color:transparent;
+    border: 2px solid crimson;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease ;
+    transition-property: background-color,color;
+}
+#hero .cta:hover{
+    color: white;
+    background-color: crimson;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Serching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="tp"> 
+            <header>
+                <a href="#" class="reff">Coffy.Time</a>
+            </header>
+
+            <h1>
+               <span>The Healthy</span>  Drinking Experience
+            </h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus autem iste nobis officiis ipsa illo maiores molestiae et vero laudantium.</p>
+            
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                    <label for="city">Enter your city:</label>
+                    <input type="text"name="city" id="city">
+                    <p>Example: "Delhi"</p>
+                </div>
+
+                    <input type="button" value="Find a coffee Place" id="cta_but">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-cal">
+            <h2>Rosted, Beans</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, repudiandae sit laboriosam est officiis, ipsum voluptates reiciendis autem earum, non delectus consectetur explicabo
+                 dignissimos culpa eos tempore ad quasi aliquid!</p> 
+        </div>
+        <img src="image/kru.png" alt="picture for dish">
+    </section>
+
+    <script>
+        let btn=document.getElementById('cta_but');
+        let overlay=document.getElementById('overlay');
+        btn.addEventListener('click',()=>{
+            overlay.style.display='grid';
+            overlay.classList.add('animate-overlay');
+        });
+
+
+    </script>
+</body>
+</html>
