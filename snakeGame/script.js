@@ -51,13 +51,7 @@ class Apple{
                 if(this.x==snake.tail[i].x&&this.y==snake.tail[i].y){
                     isTouching=true
                 }
-            }
-            
-            this.color = "pink"
-            this.size=snake.size
-            if(!isTouching){
-                break;
-            }
+    }
         }
     }
 }
