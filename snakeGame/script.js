@@ -55,6 +55,8 @@ class Apple{
             if(!isTouching){
                 break;
             }
+            this.color = "pink"
+            this.size=snake.size
         }
     }
 }
@@ -79,4 +81,12 @@ gameLoop=()=>{
 show=()=>{
     update();
     draw();
+}
+
+update=()=>{
+
+}
+
+draw=()=>{
+    
 }
