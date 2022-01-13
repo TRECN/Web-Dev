@@ -19,5 +19,6 @@ gameLoop=()=>{
 }
 
 show=()=>{
-    
+    update();
+    draw();
 }
