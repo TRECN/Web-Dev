@@ -14,6 +14,10 @@ window.onload = ()=>{
     gameLoop();
 }
 
-function gameLoop(){
+gameLoop=()=>{
     setInterval(show,100/15)//hete 15 is out fps value
+}
+
+show=()=>{
+    
 }
