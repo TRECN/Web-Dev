@@ -13,3 +13,7 @@ var canvasContext = canvas.getContext('2d')
 window.onload = ()=>{
     gameLoop();
 }
+
+function gameLoop(){
+    setInterval(show,100/15)//hete 15 is out fps value
+}
