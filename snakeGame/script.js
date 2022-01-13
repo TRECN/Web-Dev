@@ -84,6 +84,7 @@ show=()=>{
 }
 
 update=()=>{
+    snake.move()
     
 }
 
@@ -107,3 +108,22 @@ createRect=(x,y,width,height,color)=>{
     canvasContext.fillRect(x,y,width,height)
 
 }
+
+window.addEventListener('keydown',(event)=>{
+    setTimeout(()=>{
+        if(event.keyCode==37&&snake.rotateX!=1){
+            snake.rotateX=1;
+            snake.rotateX=0;
+        }else if(event.keyCode==37&&snake.rotateX!=1){
+            snake.rotateX=1;
+            snake.rotateX=0;
+        }else if(event.keyCode==37&&snake.rotateX!=1){
+            snake.rotateX=1;
+            snake.rotateX=0;
+        }else if(event.keyCode==37&&snake.rotateX!=1){
+            snake.rotateX=1;
+            snake.rotateX=0;
+        }
+    })
+
+})
