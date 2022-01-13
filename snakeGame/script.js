@@ -10,4 +10,6 @@ var apple = new Apple();
 
 var canvasContext = canvas.getContext('2d')
 
-window
+window.onload = ()=>{
+    gameLoop();
+}
