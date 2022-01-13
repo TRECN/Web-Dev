@@ -88,5 +88,7 @@ update=()=>{
 }
 
 draw=()=>{
+    createRect(0,0,canvas.width,canvas.height,"black")
+    createRect(0,0,canvas.width,canvas.height)
     
 }
