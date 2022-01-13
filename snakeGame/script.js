@@ -84,7 +84,7 @@ show=()=>{
 }
 
 update=()=>{
-
+    
 }
 
 draw=()=>{
@@ -98,6 +98,7 @@ draw=()=>{
     canvasContext.fillStyle='#00FF42'
     canvasContext.fillText("Score: ",(snake.tail.length+1),
         canvas.width-120,18);
+        createRect(apple.x,apple.y,apple.size,apple.size,apple.color)
 
 }
 
