@@ -63,13 +63,6 @@ class Apple{
 }
 
 
-var canvas = document.getElementById("canvas")
-
-var snake = new Snake(20,20,20);
-
-var apple = new Apple();
-
-var canvasContext = canvas.getContext('2d')
 
 window.onload = ()=>{
     gameLoop();
