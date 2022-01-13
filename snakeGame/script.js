@@ -1,5 +1,9 @@
 
+class Snake{
+    constructor(x,y,size){
 
+    }
+}
 
 
 var canvas = document.getElementById("canvas")
