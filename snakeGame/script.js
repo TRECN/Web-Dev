@@ -84,6 +84,8 @@ show=()=>{
 }
 
 update=()=>{
+    canvasContext.clearRect(0,0,canvas.width,canvas.height)
+    console.log('update')
     snake.move()
     
 }
