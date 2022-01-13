@@ -8,6 +8,11 @@ class Snake{
         this.rotateX=0;
         this.rotateY=1;
     }
+    move(){
+        if(this.rotateX==1){
+            
+        }
+    }
 }
 
 
