@@ -94,5 +94,13 @@ draw=()=>{
         createRect(snake.tail[i].x+2.5,snake.tail[i].y+2.5,
             snake.size-5,snake.size-5,'white')
     }
+    canvasContext.font = "20px Arial"
+    canvasContext.fillStyle='#00FF42'
+    canvasContext.fillText("Scor")
+}
+
+createRect=(x,y,width,height,color)=>{
+    canvasContext.fillStyle = color
+    canvasContext.fillRect(x,y,width,height)
 
 }
