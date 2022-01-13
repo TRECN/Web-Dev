@@ -13,25 +13,25 @@ class Snake{
         if(this.rotateX==1){
             newRect={
                 x:this.tail[this.tail.length-1].x+this.size,
-                y:this.taile[this.tail.length-1].y
+                y:this.tail[this.tail.length-1].y
 
             }
         }else if(this.rotateX==-1){
             newRect={
                 x:this.tail[this.tail.length-1].x-this.size,
-                y:this.taile[this.tail.length-1].y
+                y:this.tail[this.tail.length-1].y
 
             }
         }else if(this.rotateY==1){
             newRect={
                 x:this.tail[this.tail.length-1].x,
-                y:this.taile[this.tail.length-1].y+this.size
+                y:this.tail[this.tail.length-1].y+this.size
 
             }
         }else if(this.rotateY==-1){
             newRect={
                 x:this.tail[this.tail.length-1].x,
-                y:this.taile[this.tail.length-1].y+this.size
+                y:this.tail[this.tail.length-1].y-this.size
 
             }
         }
@@ -75,7 +75,7 @@ window.onload = ()=>{
 }
 
 gameLoop=()=>{
-    setInterval(show,100/15)//here 15 is out fps value
+    setInterval(show,1000/15)//here 15 is out fps value
 }
 
 show=()=>{
@@ -115,16 +115,16 @@ window.addEventListener('keydown',(event)=>{
     setTimeout(()=>{
         if(event.keyCode==37&&snake.rotateX!=1){
             snake.rotateX=-1;
-            snake.rotateX=0;
+            snake.rotateY=0;
         }else if(event.keyCode==38&&snake.rotateY!=1){
             snake.rotateX=0;
-            snake.rotateX=-1;
+            snake.rotateY=-1;
         }else if(event.keyCode==39&&snake.rotateX!=-1){
             snake.rotateX=1;
-            snake.rotateX=0;
+            snake.rotateY=0;
         }else if(event.keyCode==40&&snake.rotateY!=-1){
             snake.rotateX=0;
-            snake.rotateX=1;
+            snake.rotateY=1;
         }
     })
 
