@@ -64,7 +64,7 @@ class Apple{
 
 var canvas = document.getElementById("canvas")
 
-var snake = new Snake();
+var snake = new Snake(20,20,20);
 
 var apple = new Apple();
 
