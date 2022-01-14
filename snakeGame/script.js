@@ -1,4 +1,3 @@
-
 class Snake{
     constructor(x,y,size){
         this.x=x;
