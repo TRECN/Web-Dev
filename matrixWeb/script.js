@@ -78,3 +78,10 @@ let charArr = [
   canvas.width = cw;
   canvas.height = ch
   
+  let frames = 0
+
+  class FallingChar{
+      constructor(x,y){
+
+      }
+  }
