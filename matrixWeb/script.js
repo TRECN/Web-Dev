@@ -92,5 +92,8 @@ let charArr = [
           this.speed = Math.random() * fontSize * 3/4 + fontSize *3/4
 
           ctx.fillStyle = "rba(0,255,0)"
+          ctx.font = fontSize+ "px san-serif"
+          ctx.fillText(this.value, this.x,this.y )
+          this.y+=this.speed;
       }
   }
