@@ -88,14 +88,13 @@ let charArr = [
 
       draw(ctx){
           this.value =
-             charArr[Math.floor(Math.random()
-                +(charArr.length-1))]
+             charArr[Math.floor(Math.random()+(charArr.length-1))]
                 .toUpperCase()
 
           this.speed = 
-          Math.random() 
+         ( Math.random() 
           * fontSize 
-          * 3/4 + (fontSize *3)/4
+          * 3)/4 + (fontSize *3)/4
 
           ctx.fillStyle = "rba(0,255,0)"
           ctx.font = fontSize+ "px san-serif"
