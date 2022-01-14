@@ -92,6 +92,10 @@ update=()=>{
     
 }
 
+checkHitWall=()=>{
+    
+}
+
 eatApple=()=>{
     if(snake.tail[snake.tail.length-1].x==apple.x
         &&
