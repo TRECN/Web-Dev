@@ -97,3 +97,11 @@ let charArr = [
           this.y+=this.speed;
       }
   }
+
+  let update= () =>{
+      if(fallingCharArr.length<maxCharCount){
+          let fallingChar = new FallingChar(Math.floor(Math.random() * maxColumns)* fontSize,Math.random()* ch/2 - 50)
+          fallingCharArr.push(fallingChar)
+      }
+      
+  }
