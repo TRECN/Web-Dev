@@ -93,7 +93,16 @@ update=()=>{
 }
 
 checkHitWall=()=>{
-    
+    var headTail = snake.tail[snake.tail.length-1]
+    if(headTail.x==-snake.size){
+        head.tail.x=canvas.width - snake.size
+    }else if(headTail.x==-snake.size){
+        head.tail.x=canvas.width - snake.size
+    }else if(headTail.x==-snake.size){
+        head.tail.x=canvas.width - snake.size
+    }else if(headTail.x==-snake.size){
+        head.tail.x=canvas.width - snake.size
+    }
 }
 
 eatApple=()=>{
