@@ -88,6 +88,7 @@ update=()=>{
     console.log('update')
     snake.move()
     eatApple()
+    checkHitWall()
     
 }
 
