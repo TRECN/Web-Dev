@@ -103,7 +103,10 @@ let charArr = [
 
   let update= () =>{
       if(fallingCharArr.length<maxCharCount){
-          let fallingChar = new FallingChar(Math.floor(Math.random() * maxColumns)* fontSize,Math.random()* ch/2 - 50)
+          let fallingChar = new FallingChar(
+              Math.floor(Math.random() * maxColumns)* fontSize,
+              (Math.random()* ch)/2 - 50
+            );
           fallingCharArr.push(fallingChar)
       }
       ctx.fillStyle="rgba(0,0,0,0.05)"
