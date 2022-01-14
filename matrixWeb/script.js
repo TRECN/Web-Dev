@@ -82,6 +82,9 @@ let charArr = [
 
   class FallingChar{
       constructor(x,y){
-
+        this.x=x;
+        this.y=y;
       }
+
+      draw
   }
