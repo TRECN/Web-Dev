@@ -105,5 +105,8 @@ let charArr = [
       }
       ctx.fillStyle="rgba(0,0,0,0.05)"
       ctx.fillRect(0,0,cw,ch)
+      for(let i=0;i<fallingCharArr.length&&frames%2==0;i++){
+          fallingCharArr[i].draw()
+      }
       
   }
