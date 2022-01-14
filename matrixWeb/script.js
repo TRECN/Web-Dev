@@ -83,9 +83,9 @@ let charArr = [
     "Ц",
   ];
 
-  let maxCharCount =  1000;
+  let maxCharCount =  300;
   let fallingCharArr = []
-  let fontSize = 15
+  let fontSize = 13
   let maxColumns = cw/fontSize
  
   
@@ -109,6 +109,12 @@ let charArr = [
           ctx.font = fontSize+ "px san-serif"
           ctx.fillText(this.value, this.x,this.y )
           this.y+=this.speed;
+
+          if (this.y > ch) {
+            this.y = (Math.random() * ch) / 2 - 50;
+            this.x = Math.floor(Math.random() * maxColumns) * fontSize;
+            this.speed = (-Math.random() * fontSize * 3) / 4 + (fontSize * 3) / 4;
+          }
       }
   }
 
