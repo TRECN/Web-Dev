@@ -95,13 +95,13 @@ update=()=>{
 checkHitWall=()=>{
     var headTail = snake.tail[snake.tail.length-1]
     if(headTail.x==-snake.size){
-        head.tail.x=canvas.width - snake.size
-    }else if(headTail.x==-snake.size){
-        head.tail.x=canvas.width - snake.size
-    }else if(headTail.x==-snake.size){
-        head.tail.x=canvas.width - snake.size
-    }else if(headTail.x==-snake.size){
-        head.tail.x=canvas.width - snake.size
+        headTail.x=canvas.width - snake.size
+    }else if(headTail.x==canvas.width){
+        headTail.x=0
+    }else if(headTail.y==-snake.size){
+        headTail.y=canvas.height - snake.size
+    }else if(headTail.y==canvas.height){
+        headTail.y=0
     }
 }
 
