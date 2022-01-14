@@ -75,7 +75,7 @@ window.onload = ()=>{
 }
 
 gameLoop=()=>{
-    setInterval(show,1000/240)//here 15 is out fps value
+    setInterval(show,1000/300)//here 15 is out fps value
 }
 
 show=()=>{
