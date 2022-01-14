@@ -7,6 +7,9 @@ const ctx = canvas.getContext('2d')
 let cw = window.innerWidth
 let ch = window.innerHeight
 
+canvas.width = cw;
+canvas.height = ch
+
 let charArr = [
     "a",
     "b",
@@ -75,8 +78,7 @@ let charArr = [
   let fallingCharArr = []
   let fontSize = 15
   let maxColumns = cw/fontSize
-  canvas.width = cw;
-  canvas.height = ch
+ 
   
   let frames = 0
 
