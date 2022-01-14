@@ -81,12 +81,7 @@ let charArr = [
     "Ц",
   ];
 
-  let maxCharCount =  100;
-  let fallingCharArr = []
-  let fontSize = 13
-  let maxColumns = cw/fontSize
  
-  
   let frames = 0
 
   class FallingChar{
