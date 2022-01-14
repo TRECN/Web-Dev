@@ -25,7 +25,7 @@ let charArr = [
     "e",
     "f",
     "g",
-    "h",
+    "s",
     "i",
     "j",
     "k",
@@ -81,7 +81,7 @@ let charArr = [
     "Ц",
   ];
 
-  let maxCharCount =  300;
+  let maxCharCount =  100;
   let fallingCharArr = []
   let fontSize = 13
   let maxColumns = cw/fontSize
